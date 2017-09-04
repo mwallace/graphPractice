@@ -27,6 +27,10 @@ public class graphPractice {
 
 }
 
+// Graph
+//
+// General class for implementing different graphs
+//
 abstract class Graph {
 	// Initialize list of Nodes
 	public Graph() {
@@ -48,6 +52,10 @@ abstract class Graph {
 	protected ArrayList<Node> nodes;
 }
 
+// CyclicGraph
+//
+// Specialized graph that is undirected and cyclic
+//
 class CyclicGraph extends Graph {
 	
 	// Create a new connection between src and dst. Fails if
@@ -79,6 +87,10 @@ class CyclicGraph extends Graph {
 	}
 }
 
+// GraphNode
+//
+// Specialized vertex with list of edges
+//
 class GraphNode extends Node {
 	
 	GraphNode(String value) {
@@ -117,6 +129,10 @@ class GraphNode extends Node {
 	private ArrayList<Node> adjList;
 }
 
+// Node
+//
+// General Node class for implementing specialized vertices
+//
 abstract class Node {
 	
 	Node(String value) {
